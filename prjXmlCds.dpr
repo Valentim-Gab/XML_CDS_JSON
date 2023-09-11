@@ -2,7 +2,7 @@ program XmlCds;
 
 uses
   Forms,
-  UdmXmlCds in 'UdmXmlCds.pas' {Form1};
+  uXmlCds in 'uXmlCds.pas' {Form1};
 
 {$R *.res}
 

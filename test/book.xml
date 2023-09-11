@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livro>
+    <titulo>O Senhor dos Anéis</titulo>
+    <autor>J.R.R. Tolkien</autor>
+    <genero>Fantasia</genero>
+    <ano_publicacao>1954</ano_publicacao>
+    <editora>Editora Martins Fontes</editora>
+</livro>

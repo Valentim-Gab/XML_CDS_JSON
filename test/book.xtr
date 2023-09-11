@@ -1,0 +1,33 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds" DataEncoding="UTF-8"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\livro"><Select dest="@titulo" from="\titulo"/><Select dest="@autor" from="\autor"/><Select dest="@genero" from="\genero"/><Select dest="@ano_publicacao" from="\ano_publicacao"/><Select dest="@editora" from="\editora"/></SelectEach></Transform><XmlSchema RootName="livro"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="livro" type="livroType"/>
+  <xs:complexType name="livroType">
+    <xs:sequence>
+      <xs:element name="titulo" type="tituloType"/>
+      <xs:element name="autor" type="autorType"/>
+      <xs:element name="genero" type="generoType"/>
+      <xs:element name="ano_publicacao" type="ano_publicacaoType"/>
+      <xs:element name="editora" type="editoraType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="titulo" type="tituloType"/>
+  <xs:simpleType name="tituloType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="autor" type="autorType"/>
+  <xs:simpleType name="autorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="genero" type="generoType"/>
+  <xs:simpleType name="generoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ano_publicacao" type="ano_publicacaoType"/>
+  <xs:simpleType name="ano_publicacaoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="editora" type="editoraType"/>
+  <xs:simpleType name="editoraType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="titulo" fieldtype="string" WIDTH="18"/><FIELD attrname="autor" fieldtype="string" WIDTH="14"/><FIELD attrname="genero" fieldtype="string" WIDTH="8"/><FIELD attrname="ano_publicacao" fieldtype="string" WIDTH="4"/><FIELD attrname="editora" fieldtype="string" WIDTH="22"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="titulo" fieldtype="string" WIDTH="18"/><FIELD attrname="autor" fieldtype="string" WIDTH="14"/><FIELD attrname="genero" fieldtype="string" WIDTH="8"/><FIELD attrname="ano_publicacao" fieldtype="string" WIDTH="4"/><FIELD attrname="editora" fieldtype="string" WIDTH="22"/></FIELDS><PARAMS DATASET_DELTA="TRUE"/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

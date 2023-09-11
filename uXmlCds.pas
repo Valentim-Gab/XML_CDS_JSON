@@ -1,4 +1,4 @@
-unit UdmXmlCds;
+unit uXmlCds;
 
 interface
 
